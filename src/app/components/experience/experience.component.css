@@ -1,0 +1,138 @@
+.experience-section {
+  background: #162235;
+  color: white;
+  padding: 100px 20px;
+}
+
+.experience-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.section-heading p {
+  color: #00c6ff;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.section-heading h2 {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.section-heading h2 span {
+  color: #00c6ff;
+}
+
+.section-heading h4 {
+  color: #b5bdc9;
+  font-weight: normal;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 35px;
+  border-left: 2px solid #00c6ff;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -44px;
+  top: 30px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00c6ff;
+  border: 4px solid #162235;
+  box-shadow: 0 0 10px #00c6ff;
+}
+
+.experience-card {
+  background: #101828;
+  border: 1px solid #263449;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  border-color: #00c6ff;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.experience-header h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.experience-header h4 {
+  color: #00c6ff;
+}
+
+.experience-date {
+  color: #00c6ff;
+  background: #162235;
+  padding: 8px 15px;
+  border-radius: 20px;
+  height: fit-content;
+}
+
+.experience-description {
+  color: #b5bdc9;
+  line-height: 1.8;
+}
+
+.experience-card ul {
+  padding-left: 20px;
+  color: #b5bdc9;
+  line-height: 2;
+  margin: 20px 0;
+}
+
+.experience-card li::marker {
+  color: #00c6ff;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tech-stack span {
+  background: #162235;
+  color: #00c6ff;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 13px;
+  border: 1px solid #263449;
+}
+
+@media (max-width: 576px) {
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+}

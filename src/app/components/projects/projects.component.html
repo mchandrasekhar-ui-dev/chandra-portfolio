@@ -1,0 +1,48 @@
+<section class="projects-section" id="projects">
+
+  <div class="projects-container">
+
+    <div class="section-heading">
+      <p>MY WORK</p>
+      <h2>My <span>Projects</span></h2>
+      <h4>Some of the projects I have worked on</h4>
+    </div>
+
+    <div class="projects-grid">
+
+      @for (project of projects; track project.name) {
+
+        <div class="project-card">
+
+          <div class="project-icon">
+            {{ project.name.charAt(0) }}
+          </div>
+
+          <h3>{{ project.name }}</h3>
+
+          <p class="project-description">
+            {{ project.description }}
+          </p>
+
+          <div class="project-role">
+            <strong>Role:</strong>
+            {{ project.role }}
+          </div>
+
+          <div class="project-technologies">
+
+            @for (tech of project.technologies; track tech) {
+              <span>{{ tech }}</span>
+            }
+
+          </div>
+
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>
