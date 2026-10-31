@@ -1,19 +1,31 @@
-
-<section class="hero" id="home">
+<section
+  class="hero"
+  id="home"
+  (mousemove)="moveCharacter($event)"
+  (mouseleave)="resetCharacter()">
 
   <div class="hero-container">
 
+    <!-- LEFT CONTENT -->
     <div class="hero-content">
+
+      <div class="terminal-badge">
+        <div class="terminal-line">
+          <span class="terminal-dot"></span>
+          <span>~/chandrasekhar $</span>
+          <strong>6+ years experience</strong>
+        </div>
+        <p>Angular • TypeScript • JavaScript • UI Developer</p>
+      </div>
 
       <p class="intro">HELLO, I'M</p>
 
       <h1>
-        MADAVARAM CHANDRA SEKHAR
+        MADAVARAM
+        <span>CHANDRA SEKHAR</span>
       </h1>
 
-      <h2>
-        I'm a <span>Angular Developer</span>
-      </h2>
+      <h2>Senior <span>Angular / UI Developer</span></h2>
 
       <p class="description">
         UI Developer with 6.1 years of experience in building
@@ -23,34 +35,120 @@
       </p>
 
       <div class="hero-buttons">
-
         <a href="#projects" class="primary-btn">
-          View My Projects
+          View My Projects <span>→</span>
         </a>
 
         <a href="#contact" class="secondary-btn">
           Contact Me
         </a>
-  <a
-    href="assets\resume\MADAVARAM CHANDRASEKHAR.pdf"
-    download="Chandra-Sekhar-Resume.pdf"
-    class="resume-btn">
-    Download Resume
-  </a>
+
+        <a
+          href="assets/resume/MADAVARAM%20CHANDRASEKHAR.pdf"
+          download="Chandra-Sekhar-Resume.pdf"
+          class="secondary-btn">
+          ↓ Download Resume
+        </a>
       </div>
 
       <div class="social-links">
-        <a href="https://github.com/mchandrasekhar-ui-dev" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/chandrasekhar-madavaram-91969a421/" target="_blank">LinkedIn</a>
+        <a
+          href="https://github.com/mchandrasekhar-ui-dev"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/chandrasekhar-madavaram-91969a421/"
+          target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn ↗
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <h3>6+</h3>
+          <p>Years Experience</p>
+        </div>
+
+        <div>
+          <h3>20+</h3>
+          <p>Projects</p>
+        </div>
+
+        <div>
+          <h3>6</h3>
+          <p>Technologies</p>
+        </div>
+
+        <div>
+          <h3>50+</h3>
+          <p>Components</p>
+        </div>
       </div>
 
     </div>
 
-    <div class="hero-image">
-      <div class="image-circle">
-        <!-- <span>UI</span> -->
-         <img src="\assets\images\chandra.jpg" alt="image"/>
+    <!-- CENTER CHARACTER -->
+    <div class="hero-character">
+
+      <div class="character-glow"></div>
+      <div class="character-orbit orbit-one"></div>
+      <div class="character-orbit orbit-two"></div>
+
+      <div class="floating-tech angular-tech">A</div>
+      <div class="floating-tech typescript-tech">TS</div>
+      <div class="floating-tech javascript-tech">JS</div>
+      <div class="floating-tech code-tech">&lt;/&gt;</div>
+
+      <img
+        class="developer-image"
+        src="assets/images/chandra-3d-character.png"
+        alt="3D developer character">
+
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="hero-side-content">
+
+      <p class="side-label">ANGULAR 17</p>
+
+      <h2>UI <span>DEVELOPER</span></h2>
+
+      <p class="side-description">
+        Building modern and interactive web applications.
+      </p>
+
+      <!-- CODE EDITOR -->
+      <div class="code-window">
+
+        <div class="code-header">
+          <div class="window-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <strong>chandrasekhar.ts</strong>
+          <span class="ts-label">TS</span>
+        </div>
+
+        <div class="code-content">
+          <p><span>01</span> class <b>Chandrasekhar</b> &#123;</p>
+          <p><span>02</span> &nbsp; skills = ['Angular',</p>
+          <p><span>03</span> &nbsp; 'TypeScript', 'JavaScript'];</p>
+          <p><span>04</span> &nbsp; experience = 6;</p>
+          <p><span>05</span> &nbsp; passion = 'Building great UI';</p>
+          <p><span>06</span> &nbsp; getMessage() &#123;</p>
+          <p><span>07</span> &nbsp;&nbsp; return 'Always learning';</p>
+          <p><span>08</span> &nbsp; &#125;</p>
+          <p><span>09</span> &#125;</p>
+        </div>
+
       </div>
+
     </div>
 
   </div>
