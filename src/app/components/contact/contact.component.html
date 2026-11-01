@@ -1,0 +1,140 @@
+
+<section class="contact-section" id="contact">
+
+  <div class="contact-container">
+
+    <!-- Section Heading -->
+    <div class="section-heading">
+      <p>GET IN TOUCH</p>
+      <h2>Contact <span>Me</span></h2>
+      <h4>Let's connect and discuss opportunities</h4>
+    </div>
+
+    <div class="contact-content">
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+
+        <h3>Let's Talk About Your Opportunity</h3>
+
+        <p>
+          I am currently looking for opportunities as a
+          UI Developer / Angular Developer.
+          Feel free to contact me.
+        </p>
+
+        <!-- Email -->
+        <div class="contact-item">
+          <span>✉</span>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:chandrasekharmadavaram19@gmail.com">
+              chandrasekharmadavaram19&#64;gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-item">
+          <span>📍</span>
+          <div>
+            <h4>Location</h4>
+            <p>Bangalore, India</p>
+          </div>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-item">
+          <span>💼</span>
+          <div>
+            <h4>LinkedIn</h4>
+            <a
+              href="https://www.linkedin.com/in/chandrasekhar-madavaram-91969a421/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit LinkedIn Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-item">
+          <span>💻</span>
+          <div>
+            <h4>GitHub</h4>
+            <a
+              href="https://github.com/mchandrasekhar-ui-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit GitHub Profile
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+
+        <h3>Send Me a Message</h3>
+
+        <form (submit)="onSubmit($event)">
+
+          <!-- Name -->
+          <input
+            type="text"
+            placeholder="Your Name"
+            required
+          >
+
+          <!-- Email -->
+          <input
+            type="email"
+            placeholder="Your Email"
+            required
+          >
+
+          <!-- Subject -->
+          <input
+            type="text"
+            placeholder="Subject"
+            required
+          >
+
+          <!-- Message -->
+          <textarea
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <!-- Submit Button -->
+          <button type="submit" [disabled]="isSending">
+            {{ isSending ? 'Sending...' : 'Send Message' }}
+          </button>
+
+          <!-- Success Message -->
+          @if (successMessage) {
+            <p class="success-message">
+              {{ successMessage }}
+            </p>
+          }
+
+          <!-- Error Message -->
+          @if (errorMessage) {
+            <p class="error-message">
+              {{ errorMessage }}
+            </p>
+          }
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

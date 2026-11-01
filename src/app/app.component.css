@@ -1,0 +1,51 @@
+/* Custom Neon Cursor */
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #c084fc;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 10px #a855f7,
+    0 0 25px rgba(168, 85, 247, 0.5),
+    inset 0 0 10px rgba(168, 85, 247, 0.2);
+  transition:
+    width 0.25s ease,
+    height 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.cursor-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #ffffff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 12px #ffffff;
+}
+
+.custom-cursor.cursor-hover {
+  width: 65px;
+  height: 65px;
+  border-color: #22d3ee;
+  box-shadow:
+    0 0 12px #22d3ee,
+    0 0 30px rgba(34, 211, 238, 0.5);
+}
+
+/* Hide on touch devices */
+
+@media (hover: none), (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}

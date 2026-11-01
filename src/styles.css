@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/* Remove default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #101828;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
